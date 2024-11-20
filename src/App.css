@@ -1,7 +1,9 @@
+/* General app styling */
 .App {
   text-align: center;
 }
 
+/* Header logo and animation (if applicable) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +30,7 @@
   color: #61dafb;
 }
 
+/* Animation for rotating the logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +39,83 @@
     transform: rotate(360deg);
   }
 }
+
+/* Shared page layout for each route */
+.page {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  padding: 0px;
+}
+
+/* Styling for links on each page */
+.link {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #61dafb;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+.snack-page {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover; /* Cover the screen with the background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.snack-title {
+  font-size: 2.5rem; /* Increase title size */
+  margin-bottom: 15px; /* Add spacing below the title */
+  padding: 10px 20px; /* Add padding inside the background */
+  background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.snack-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px; /* Add spacing below the description */
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly lighter background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Add subtle shadow */
+}
+
+.back-link {
+  font-size: 1rem; /* Keep link smaller */
+  text-decoration: none; /* Remove underline */
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.7); /* Add a background */
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.back-link:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Lighten background on hover */
+  color: black; /* Change text to black on hover */
+}
+
+
+
